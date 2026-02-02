@@ -1,7 +1,7 @@
 import { CodegenConfig } from "@graphql-codegen/cli";
 
 const config: CodegenConfig = {
-  schema: "https://odysee-liftoff-typescript-server-production.up.railway.app/",
+  schema: "./src/schema.graphql",
   documents: ["src/**/*.tsx"],
   generates: {
     "./src/__generated__/": {
